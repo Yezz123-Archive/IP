@@ -4,15 +4,12 @@ import sys
 from sys import argv
 import os
 
-#arguments and parser
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument ("-v", help= "target/host IP address", type=str, dest='target', required=True )
 
 args = parser.parse_args()
 
-#colours used
 red = '\033[31m'
 yellow = '\033[93m'
 lgreen = '\033[92m'
@@ -22,19 +19,14 @@ cyan = '\033[96m'
 
 #banner of script
 print (red+"""
- ______ _______  
-|      \       \ 
- \▓▓▓▓▓▓ ▓▓▓▓▓▓▓\
-  | ▓▓ | ▓▓__/ ▓▓
-  | ▓▓ | ▓▓    ▓▓
-  | ▓▓ | ▓▓▓▓▓▓▓ 
- _| ▓▓_| ▓▓      
-|   ▓▓ \ ▓▓      
- \▓▓▓▓▓▓\▓▓      
-            v1.0
+                        ██╗██████╗ 
+                        ██║██╔══██╗
+                        ██║██████╔╝
+                        ██║██╔═══╝ 
+                        ██║██║     
+                        ╚═╝╚═╝     
 """+red)
 print (lgreen+bold+"         <===[[ coded by Yezz123 ]]===> \n"+clear)
-print (yellow+bold+"   <---(( IG : @sadnessvibewithbadeffect ))--> \n"+clear)
 
 
 ip = args.target
